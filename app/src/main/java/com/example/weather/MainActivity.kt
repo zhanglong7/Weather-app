@@ -58,8 +58,8 @@ class MainActivity : AppCompatActivity() {
                 val updatedAt:Long = jsonObj.getLong("dt")
                 val updatedAtText = "Updated at: "+ SimpleDateFormat("dd/MM/yyyy hh:mm a", Locale.ENGLISH).format(Date(updatedAt*1000))
                 val temp = main.getString("temp")+"°C"
-                val tempMin = "Min Temp: " + main.getString("temp_min")+"°C"
-                val tempMax = "Max Temp: " + main.getString("temp_max")+"°C"
+                val tempMin = "Min " + main.getString("temp_min")+"°C"
+                val tempMax = "Max " + main.getString("temp_max")+"°C"
                 val pressure = main.getString("pressure")
                 val humidity = main.getString("humidity")
 
